@@ -1,11 +1,11 @@
 package model;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.ZipEntry;
 
 public record ZipNode (
     String name,
-    ArrayList<ZipNode> children,
+    List<ZipNode> children,
     ZipEntry entry){
 
     public boolean isDirectory() {
